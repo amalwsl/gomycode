@@ -7,14 +7,14 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body background="#f3f4f7">
-        <header>
+        <header class="header">
             <nav>
-                <ul>
-                    <li><a href="#home">home</a></li>
-                    <li><a href="#about">about</a></li>
-                    <li><a href="#work">work</a></li>
-                    <li><a href="#resume">resume</a></li>
-                    <li><a href="#contact">contact</a></li>
+                <ul class="navBar" type="none">
+                    <li class="item"><a href="#home">home</a></li>
+                    <li class="item"><a href="#about">about</a></li>
+                    <li class="item"><a href="#work">work</a></li>
+                    <li class="item"><a href="#resume">resume</a></li>
+                    <li class="item"><a href="#contact">contact</a></li>
 
                 </ul>
             </nav>
@@ -23,55 +23,63 @@
         <main>
             
             <section id="home">
+                <img src="ctrl.png" width="100%" class="ctrl">
                 <dl>
-                    <h1><dt><b>Amal Wesleti</b></dt></h1>
+                    <h1><dt>Amal Wesleti</dt></h1>
                     <small><dd>SOFTWARE DEVELOPER</dd></small>
                 </dl> 
             </section>
 
             <section id="about">
-                <p>
-                    I don’t like to define myself by the work I’ve done. I define myself by the work I want
-                    to do. Skills can be taught, personality is inherent. I prefer to keep learning, continue
-                    challenging myself and do interesting things that matter
-                </p>
-                <img src="me2.jpg" width="30%"> 
+                <h2>About Me</h2>
+                <div class="p-img">
+                    <img src="me2.jpg" width="30%" class="mypic"> 
+                    <p class="p1">
+                        I don’t like to define myself by the work I’ve done. <br>
+                        I define myself by the work I want to do.<br>
+                         Skills can be taught, personality is inherent. <br>
+                        I prefer to keep learning, continue
+                        challenging myself and do interesting things that matter
+                    </p>
+                </div>
             </section>
 
             <section id="work">
-                <figure role="group">
-                    <figcaption>My Work</figcaption>
-                
-                    <figure>
-                        <img src="work/affiche sonia.png" alt="Poster" width="20%">
-                        <figcaption>Poster</figcaption>
-                    </figure>
-                
-                    <figure>
-                        <img src="work/affjdida.jpg" alt="Poster" width="20%">
-                        <figcaption>Poster</figcaption>
-                    </figure>
-
-                    <figure>
-                        <img src="work/chambre 3d.jpg" alt="3D Modeling" width="20%">
-                        <figcaption>3D Modeling</figcaption>
-                    </figure>
-
-                    <figure>
-                        <img src="work/logosnew.jpg" alt="Logo" width="20%">
-                        <figcaption>Logo</figcaption>
-                    </figure>
-
-                    <figure>
-                        <img src="work/logosssss.jpg" alt="Logo" width="20%">
-                        <figcaption>Logo</figcaption>
-                    </figure>
-
-                    <figure>
-                        <img src="work/saha w afye 01.png" alt="Logo" width="20%">
-                        <figcaption>Logo</figcaption>
-                    </figure>
-                
+                <figure role="group" class="figgrp">
+                    <figcaption><h2>My Work</h2></figcaption>
+                    <div class="imgswork">
+                        <figure class="figure">
+                            <img src="work/affiche sonia.png" alt="Poster" width="20%">
+                            
+                        </figure>
+                    
+                        <figure class="figure">
+                            <img src="work/affjdida.jpg" alt="Poster" width="20%">
+                            
+                        </figure>
+    
+                        <figure class="figure">
+                            <img src="work/chambre 3d.jpg" alt="3D Modeling" width="20%">
+                            
+                        </figure>
+    
+                    </div>
+                    <div class="imgswork">
+                        <figure class="figure">
+                            <img src="work/logosnew.jpg" alt="Logo" width="20%">
+                            
+                        </figure>
+    
+                        <figure class="figure">
+                            <img src="work/logosssss.jpg" alt="Logo" width="20%">
+                            
+                        </figure>
+    
+                        <figure class="figure">
+                            <img src="work/saha w afye 01.png" alt="Logo" width="20%">
+                            
+                        </figure>
+                    </div>               
                 </figure>
             </section>
 
@@ -81,10 +89,10 @@
                 </p>
                 <iframe width="1080" height="526" src="https://www.youtube.com/embed/3i6ASZBw2U4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            </section>
         
-            <section id="contact">
+            <section >
                <h2>contact us</h2>
                <form>
-                <table>
+                <table id="contact">
                     <tr>
                         <td><label for="name">Name :</label></td>
                         <td><input type="text" placeholder="...name" id="name"></td>
